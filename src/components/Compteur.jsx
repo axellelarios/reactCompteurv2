@@ -5,8 +5,8 @@ const Compteur = ({counter, index, tab, setTab}) => {
             <div className='compteur-main'>
 
               <span className='compteur-minus'>
-                // Bouton décrementation
-                <button onClick={() => {
+                <button style={{opacity: counter == 0 ? "0" : "1"}} onClick={() => {
+                     // Bouton décrementation
                     if (counter != 0) {
                         const newTab = [...tab]             
                         // mise à jour du tableau à la position de index
@@ -16,14 +16,13 @@ const Compteur = ({counter, index, tab, setTab}) => {
                     }
                 }}>-</button>
               </span>
-              // Affichage compteur
               <span className='compteur-number'>
                 {counter}
               </span>
 
-              <span  className='compteur-plus'>
-                 // Boutton incrémentation
-                 <button onClick={() => {
+              <span  className='compteur-plus'> 
+                 <button style={{opacity: counter == 10 ? "0" : "1"}} onClick={() => {
+                    // Boutton incrémentation
                     if (counter < 10) {
                         const newTab = [...tab]             
                         // mise à jour du tableau à la position de index

@@ -3,7 +3,7 @@ import './App.css'
 import Compteur from './components/Compteur'
  
 function App() {
-  // Je créé mon state qui va récupérer mes numéro de compteurs
+  // Je créé mon state qui va récupérer mes numéros de compteurs
   const [tab, setTab] = useState([]) 
   // Je créé ma constante pour la limitation des compteurs
   const limit = 3
@@ -13,7 +13,6 @@ function App() {
         <div className='container'>
 
             <div className='top-wrapper'>
-              // Bouton ajout de compteur
               <button style={{display: tab.length == limit ? "none" : "flex"}} onClick={() => {
                 // Je copie mon tableau tab dans un nouveau tableau
                 if (tab.length < limit) {
@@ -27,7 +26,6 @@ function App() {
             </div>
 
             <div className="compteur">
-                // Boucle sur mes compteurs
                 {tab.map((compteurNumber,index) => {
                     return <Compteur key={index} setTab={setTab} tab={tab} index={index} counter={compteurNumber} />
                 })}

@@ -68,3 +68,18 @@ header {
 footer {
   text-align: center;
 }
+
+.top-wrapper {
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+.top-wrapper button {
+  background-color: #5C48D3;
+  padding: 10px 15px;
+  color: white;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 0;
+}
