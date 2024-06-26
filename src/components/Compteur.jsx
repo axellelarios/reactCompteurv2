@@ -43,6 +43,24 @@ const Compteur = ({counter, index, tab, setTab}) => {
                     setTab(newTab)  
 
                     }}>Reset</button>
+
+              <button onClick={() => {
+                    if (counter === 0) {
+                    const newTab = [...tab]             
+                    // Enlever le counter en supprimant son contenu
+                    newTab.shift();
+                    // Setting the state avec le nouveau tableau
+                    setTab(newTab)  
+                    } else {
+                        const newTab = [...tab]             
+                        // Enlever le counter en supprimant son contenu
+                        newTab.splice(index, counter);
+                        // Setting the state avec le nouveau tableau
+                        setTab(newTab)                    
+                    }
+                    }}>Delete counter</button>
+               
+
             </div>
         </div>
 

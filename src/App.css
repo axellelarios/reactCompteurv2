@@ -49,6 +49,11 @@ header {
   font-weight: 600;
 }
 
+.compteur-footer {
+  display: flex;
+  gap: 5px;
+}
+
 .compteur-footer button {
   background-color: #5C48D3;
   color: white;
