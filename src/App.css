@@ -88,3 +88,7 @@ footer {
   border-radius: 15px;
   border: 0;
 }
+
+button.delete-button {
+  background-color: grey;
+}

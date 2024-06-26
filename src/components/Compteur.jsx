@@ -35,7 +35,7 @@ const Compteur = ({counter, index, tab, setTab}) => {
             </div>
 
             <div className='compteur-footer'>
-              <button onClick={() => {
+              <button className="reset-button" onClick={() => {
                     const newTab = [...tab]             
                     // mise à jour du tableau avec 0 
                     newTab[index] = 0
@@ -44,7 +44,7 @@ const Compteur = ({counter, index, tab, setTab}) => {
 
                     }}>Reset</button>
 
-              <button onClick={() => {
+              <button className="delete-button" onClick={() => { 
                     if (counter === 0) {
                     const newTab = [...tab]             
                     // Enlever le counter en supprimant son contenu
