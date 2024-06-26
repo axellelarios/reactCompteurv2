@@ -1,0 +1,70 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1700px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  border-bottom: 1px solid grey;
+  padding: 30px 0;
+}
+
+.compteur {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.compteur-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.compteur-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.compteur-main button {
+  background-color: transparent;
+  padding: 20px;
+  border: 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.compteur-footer button {
+  background-color: #5C48D3;
+  color: white;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.compteur-main .compteur-number {
+  background-color: #5C48D3;
+  padding: 20px 25px;
+  color: white;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+footer {
+  text-align: center;
+}
