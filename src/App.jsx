@@ -11,7 +11,9 @@ function App() {
     <>
       <main>
         <div className='container'>
+
             <div className='top-wrapper'>
+              // Bouton ajout de compteur
               <button style={{display: tab.length == limit ? "none" : "flex"}} onClick={() => {
                 // Je copie mon tableau tab dans un nouveau tableau
                 if (tab.length < limit) {
@@ -23,7 +25,9 @@ function App() {
                   }            
               }}>Ajouter un compteur</button> 
             </div>
+
             <div className="compteur">
+                // Boucle sur mes compteurs
                 {tab.map((compteurNumber,index) => {
                     return <Compteur key={index} setTab={setTab} tab={tab} index={index} counter={compteurNumber} />
                 })}
